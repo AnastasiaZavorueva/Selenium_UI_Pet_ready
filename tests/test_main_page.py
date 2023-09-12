@@ -2,7 +2,7 @@ import time
 import pytest
 from pages.main_page import MainPage
 from tests.test_login_page import test_go_to_login
-
+from collections.abc import Mapping
 
 @pytest.mark.smoke
 def test_go_to_login_page(browser):

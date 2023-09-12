@@ -16,6 +16,7 @@ class LoginPageLocators:
     LOGIN_EMAIL = (By.ID, "login")
     LOGIN_PASS = (By.CSS_SELECTOR, "#password > input")
     LOGIN_BTN = (By.CLASS_NAME, "p-button-label")
+    PROFILE = (By.XPATH, '//*[@id="app"]/header/div')
 
 
 class ProfilePageLocators:
@@ -30,3 +31,5 @@ class ProfilePageLocators:
     CHOOSE_PET_GENDER = (By.CSS_SELECTOR, '#genderSelector')
     CHOOSE_PET_GENDER_MALE = (By.XPATH, '//*[@aria-label="Male"]')
     SUBMIT_ADD_PET_BTN = (By.XPATH, '//*[@id="app"]/main/div/div/form/div/div[2]/div[3]/button[1]')
+    ADD_PHOTO = (By.XPATH, '//*[@id="app"]/main/div/div/div[2]/div[2]/div/span/input')
+    SUBMIT_ADD_PHOTO = (By. XPATH, '//*[@id="app"]/main/div/div/div[2]/div[2]/div/span')

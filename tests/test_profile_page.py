@@ -4,7 +4,7 @@ from pages.profile_page import ProfilePage
 from tests.test_login_page import test_go_to_login
 
 
-@pytest.mark.skip
+# @pytest.mark.skip
 def test_go_to_logo_button(browser):
     test_go_to_login(browser)
     link = 'http://34.141.58.52:8080/#/profile'
@@ -51,6 +51,9 @@ def test_go_to_add_pet(browser):
     page.go_to_choose_pet_gender()
     page.go_to_choose_pet_gender_male()
     page.go_to_submit_add_pet_button()
-    page.open()
     time.sleep(2)
-    browser.save_screenshot('result12.png')
+    page.go_to_add_photo()
+    time.sleep(2)
+    page.go_to_submit_add_photo()
+    time.sleep(5)
+    browser.save_screenshot('result4.png')

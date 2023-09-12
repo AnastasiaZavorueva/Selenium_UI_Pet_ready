@@ -21,7 +21,7 @@ class ProfilePage(BasePage):
 
     def go_to_add_pet_name(self):
         add_pet_name = self.browser.find_element(*ProfilePageLocators.ADD_PET_NAME)
-        add_pet_name.send_keys('PIU PIU')
+        add_pet_name.send_keys('Bekas')
 
     def go_to_add_pet_age(self):
         add_pet_age = self.browser.find_element(*ProfilePageLocators.ADD_PET_AGE)
@@ -46,3 +46,11 @@ class ProfilePage(BasePage):
     def go_to_submit_add_pet_button(self):
         submit_add_pet_button = self.browser.find_element(*ProfilePageLocators.SUBMIT_ADD_PET_BTN)
         submit_add_pet_button.click()
+
+    def go_to_add_photo(self):
+        add_photo = self.browser.find_element(*ProfilePageLocators.ADD_PHOTO)
+        add_photo.send_keys('C:\\Users\\DELL\\PycharmProjects\\Selenium_UI_Pets_ready\\tests\\pet.jpg')
+
+    def go_to_submit_add_photo(self):
+        submit_add_photo = self.browser.find_element(*ProfilePageLocators.SUBMIT_ADD_PHOTO)
+        submit_add_photo.click()
