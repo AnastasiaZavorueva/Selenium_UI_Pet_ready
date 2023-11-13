@@ -27,7 +27,7 @@ def browser(request):
     else:
         chrome_options.add_argument('--headless')
 
-    driver = Chrome(options=chrome_options)
+    driver = webdriver.Chrome()
     driver.maximize_window()
 
     take_screenshot_on_failure = False
