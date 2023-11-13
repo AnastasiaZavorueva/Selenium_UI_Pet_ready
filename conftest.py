@@ -76,13 +76,13 @@ def pytest_addoption(parser):
 
 
 # pip install chromedriver-autoinstaller
-@pytest.fixture(autouse=True)
-def browser():
-    chromedriver_autoinstaller.install()
-    browser = webdriver.Chrome()
-    browser.maximize_window()
-    yield browser
-    browser.quit()
+# @pytest.fixture(autouse=True)
+# def browser():
+#     chromedriver_autoinstaller.install()
+#     browser = webdriver.Chrome()
+#     browser.maximize_window()
+#     yield browser
+#     browser.quit()
 
 
 
