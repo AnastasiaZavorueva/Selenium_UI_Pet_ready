@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/setup-node@v3
       with:
-        node-version: '18.18.2'
+        node-version: 'latest'
         check-latest: true
     - uses: actions/checkout@v4
     - name: Set up Python 3.9
