@@ -12,14 +12,10 @@ from allure_commons.types import AttachmentType
 
 
 
+
 @allure.feature('user_login')
 @allure.story('Вводим валидный email и пароль')
 @allure.severity('blocker')
-
-
-
-
-
 
 def test_go_to_login(browser):
     link = 'http://34.141.58.52:8080/#/login'

@@ -66,7 +66,7 @@ def test_go_to_pet_details(browser):
     browser.save_screenshot('result6.png')
 
 
-@pytest.mark.skip()
+@pytest.mark.xfail()
 def test_go_to_profile_page(browser):
     test_go_to_login(browser)
     link = 'http://34.141.58.52:8080/#/'

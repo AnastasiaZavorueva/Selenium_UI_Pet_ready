@@ -9,10 +9,12 @@ def timer(func):
     def wrapper(*args, **kwargs):
         # start the timer
         start_time = time.time()
+        print(start_time)
         # call the decorated function
         result = func(*args, **kwargs)
         # remeasure the time
         end_time = time.time()
+        print(end_time)
         # compute the elapsed time and print it
         execution_time = end_time - start_time
         print(f"Execution time: {execution_time} seconds")
